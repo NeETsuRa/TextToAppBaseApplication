@@ -1,0 +1,196 @@
+/g/Premo in krivo gibanje
+Gibanje v fiziki opisuje pojav, da se s časom spreminja lega telesa glede na druga telesa. Gibanje opisujemo v izbranem opazovalnem sistemu.
+/p/Hitrost 
+/v/Hitrost je vektorska količina, ki podaja spremembo lege telesa v prostoru v določeni časovni enoti. Hitrost merimo v metrih na sekundo ali drugih izpeljanih enotah. Povprečno hitrost pri gibanju izračunamo tako, da prepotovano razdaljo s delimo s časom t, potrebnim za pot.
+/s/
+/e/Hitrost.JPG
+|v|=|x|/|t|
+|v| hitrost
+|x| pot
+|t| cas
+/p/Pospešek
+/v/Pospešek je vektorska količina, ki podaja spremembo hitrosti telesa v določeni časovni enoti. Pospešek merimo v metrih na sekundo na kvadrat ali drugih izpeljanih enotah. Povprečni pospešek pri gibanju izračunamo po enačbi prikazani na tej strani.
+/s/
+/e/Pospesek.JPG
+|a|=|v|/|t|
+|a| pospesek
+/p/Pot pri enakomernem gibanju
+/v/Enakomerno gibanje je gibanje, pri katerem se hitrost telesa s časom ne spreminja ne po velikosti in ne po smeri. Poseben primer enakomernega gibanja, pri katerem se telo giblje po premici, je premo enakomerno gibanje. Pot pri premem enakomernem gibanju izračunamo po naslednji enačbi.
+/s/
+/e/PotPriEnakomernemGibanju.JPG
+|x|=|v|*|t|
+/p/Pot pri enakomerno pospešenem gibanju
+/v/Pospešeno gibanje je gibanje, pri katerem se hitrost telesa s časom spreminja po velikosti ali po smeri, pospešek pa je različen od nič. Poseben primer pospešenega gibanja, pri katerem se pospešek s časom ne spreminja, je enakomerno pospešeno gibanje. Pot pri prekopospešenem gibanju lahko izračunamo po naslednji enačbi.
+/s/
+/e/PotPriEnakomernoPospesenemGibanju.JPG
+|x|=(|a|*|t|*|t|)/2
+/p/Enakomerno kroženje
+/v/Kroženje je poseben primer krivega gibanja, pri katerem se telo giblje po krožnici. Kroženje je vedno pospešeno, saj tudi pri enakomernem kroženju se telesu ves čas spreminja smer hitrosti. Obodno hitrost izračunamo po naslednji enačbi.
+/s/
+/e/EnakomernoKrozenje.JPG
+|v|=(2*|pi|*|r|)/|t|
+|pi| Pi (3,141592653589793238462643383279502884197169399375105820974944592)
+|r| polmer
+/p/Radialni pospešek
+/v/Radialni pospešek je pospešek, ki deluje prečno na smer gibanja in povzroči, da se vektor hitrosti spreminja po smeri, na njegovo velikost pa nima vpliva. Nastopa pri kroženju. Radialni pospešek lahko izračunamo po nasednji enačbi.
+/s/
+/e/RadialniPospesek.JPG
+|a|=(|v|*|v|)/|r|
+/g/Sila in navor
+Síla je v fiziki količina, ki povzroča, da telo pospešuje in mu spreminja njegov hitrostni vektor. Navor je v fiziki količina, ki nastopa pri kroženju točkastega telesa in vrtenju togega telesa.
+/p/Sila
+/v/Sila je fizikalna količina količina, ki izraža vpliv enegatelesa na drugo telo. Sile lahko med seboj seštevamo in odštevamo. Za seštevanje in odštevanje sil uporabimo trikotno pravilo. 
+/s/SestevanjeVektorjev.JPG
+/e/
+/p/Raztezanje vzmeti
+/v/Hookov zakon podaja raztezek vzmeti pri raztezanju z dano silo, ki ga lahko izračunamo po naslednji enačbi.
+/s/
+/e/HookovZakon.JPG
+|F|=|k|*|s|
+|F| sila
+|k| koeficient
+|s| raztezek
+/p/Sila trenja
+/v/Trenje je pojav, ko deluje telo, po katerem drsi drugo telo, na slednjega deluje s silo trenja, ki ima nasprotno smer od smeri gibanja. Silo trenja lahko izračunamo po naslednji enačbi.
+/s/
+/e/SilaTrenja.JPG
+|F| = |k|*|Fn|
+|Fn| Sila normale (pravokotna na podlago)
+/p/Sila lepenja
+/v/Sila lepenja je komponenta sile podlage, ki preprečuje gibanje telesa, ki miruje na podlagi. Je vzporedna podlagi, v nasprotni smeri rezultante preostalih si. Silo lepenja izračunamo po enačbi.
+/s/
+/e/SilaLepenja.JPG
+|F| = |k|*|Fn|
+/p/Navor
+/v/Navor je količina, ki nastopa pri vrtenju togega telesa. Enaka je produktu sile, razdalje sile od osi vrtenja ter  sinusa kota med njima.
+/s/
+/e/Navor.JPG
+|M|=|r|*|F|*sin|Fi|
+|M| navor
+|Fi| kot 
+/p/Tlak
+/v/Tlak je skalarna količina in povezuje površino elementa in silo, ki deluje na le-tega. Tlak lahko izračunamo preko naslednje enačbe.
+/s/
+/e/ Tlak.JPG
+|p|=|F|/|S|
+|p| tlak
+|S| Povrsina
+/p/Vzgon
+/v/Vzgon je sila, ki deluje na potopljeno telo v tekočini. Sila vzgona kaže v nasproti smeri od sile teže. Silo vzgona izračunamo po naslednji enačbi.
+/s/
+/e/ Vzgon.JPG
+|F|=|Ro|*|V|*|g|
+|Ro| Gostota
+|V| Volumen
+|g| gravitacijski pospešek (9,789)
+/g/Newtonovi zakoni in gravitacija 
+Newtonovi zakoni so trije zakoni, s katerimi je angleški fizik Isaac Newton opisal gibanje teles. Predstavljajo temelj dinamike in klasične mehanike.
+/p/Prvi Newtnow zakon
+/v/Telo miruje ali se giblje premo enakomerno, če nanj ne delujenobena sila ali pa je vsota vseh sil, ki delujejo nanj enaka nič.
+/s/
+/e/
+/p/Drugi Newtnow zakon
+/v/Ko na neko telo z maso deluje sila se to telo giblje s pospeškom v smeri sile. Ta zakon lahko zapišemo tudi z naslednjo enačbo.
+/s/
+/e/ DRNewtonowZakon.JPG
+|F|=|m|*|a|
+|m| masa
+/p/Tretji Newtnow zakon
+/v/Če prvo telo deluje na drugo z neko silo potem tudi drugo telo deluje na prvo z nasprotno enako silo
+/s/
+/e/
+/p/Sila pri enakomernem kroženju
+/v/Centripetalna síla je sila, ki deluje pri kroženju in ukrivlja tir krožečega telesa. Izračunamo jo z aslednjo enačbo.
+/s/
+/e/ SilaPriEnakomernemKrozenju.JPG
+|F|=(|m|*|v|*|v|)/|r|
+/p/Gravitacijska sila
+/v/Teža je gravitacijska privlana sila med  telesom in Zemljo. Gravitacijska sila je odločilna pri gibanju satelitov, planetov,  zvezd in galaksij v vesolju. Gravitacijsko silo lahko izračunamo z naslednjo enačbo.
+/s/
+/e/ GravitacijskaSila.JPG
+|F|=(|G|*|m1|*|m2|)/(|r|*|r|)
+|G| gravitacijska konstanta (0,0000000000667259)
+|m1| masa telesa
+|m2| masa zemlje
+/g/Izrek o gibalni količini (posebna znanja in izbirne vsebine) 
+/p/Gibalna količina
+/v/Gibalna količina je fizikalna količina, enaka zmnožku mase in hitrosti točkastega telesa. Gibalno količino lahko izračunamo z naslednjo enačbo.
+/s/
+/e/GibalnaKolicina.JPG
+|G|=|m|*|v|
+|G| gibalna količina
+/p/Izrek o gibalni količini
+/v/Izrek o gibalni količíni pove, da je sunek zunanjih sil enak spremembi gibalne količine. Gibalno količino izračunamo preko naslednje enačbe. 
+/s/
+/e/ IzrekOGibalniKolicini.JPG
+|F|*|t|=|G|
+/g/Izrek o vrtilni količini (izbirno poglavje)
+/p/Vrtilna količina
+/v/Vrtilna količina je fizikalna količina, ki nastopa pri kroženju in vrtenju teles. Pri vrtenju togega telesa je vrtilna količina enaka zmnožku njegovega vztrajnostnega momenta in kotne hitrosti.
+/s/
+/e/ VrtilnaKolicina.JPG
+|L|=|J|*|Om|
+|L| Vrtilna količina
+|J| Vztrajnostni moment
+|Ome| Kotna Hitrost
+/p/Vztrajnostni moment
+/v/Vztrajnostni moment telesa je odvisen od njegove oblike in porazdelitve mase znotraj te oblike. Za dano maso in polmer izračunamo vstrajnostni moment preko naslednje enačbe.
+/s/
+/e/ VztrajnostniMoment.JPG
+|J|=|m|*|r|*|r|
+/g/Svetloba
+/p/Spektralna območja svetlobe
+/v/Vidna svetloba je del elektromagnetnega spektra, ki ga vidi človeško oko. Elektromagnetno sevanje v tem razponu valovnih dolžin se imenuje vidna svetloba. 
+/s/
+/e/
+/p/Popolni odboj
+/v/Popolni odboj je optični pojav, pri katerem se vpadni žarek na meji med optično gostejšim in optično redkejšim sredstvom v celoti odbije. V primeru popolnega odboje je kot vpadnega žarka enak odbojnemu žarku
+/s/
+/e/
+/p/Lomni količnik
+Lomni količnik je v optiki razmerje med fazno hitrostjo razširjanja elektromagnetnega valovanja v praznem prostoru in hitrostjo razširjanja v snovi.
+/s/
+/e/LomniKolicnik.JPG
+|n|=|c0|/|c|
+|n| lomni količnik
+|c0| hitrost razširjanja elektromagnetnega valovanja v praznem prostoru (299792458)
+|c| hitrost razširjanja elektromagnetnega valovanja v snovi
+/p/Lomni zakon
+/v/Lomni zakon v optiki govori o lomu valovanja ob prehodu čez mejo med dvema snovema z različnima lomnima količnikoma. Lomni zakon predstavimo z naslednjo enačbo.
+/s/
+/e/LomniZakon.JPG
+sin|Al|/sin|Be|=|n2|/|n1|
+|Al| vpadni kot žarka
+|Be| lomni kot žarka
+|n2| lomni količnik, kjer je kot Beta
+|n1| lomni količnik, kjer je kot Alfa
+/p/Preslikave objektov (lege)
+/v/Leče so optične naprave, ki izkoriščajo lom svetlobe. Za preslikavanje uporabljamo konveksne ali zbiralne leče in konkavne ali razpršilne leče. Goriščno razdaljo leče lahko izračunamo iz razdalje med lečo in objektom, ter razdalje med lečo in sliko preko naslednje enačbe.
+/s/
+/e/PreslikaveObjektovLege.JPG
+1/|f|=1/|a|+1/|b|
+|f| Goriščna razdalja leče
+|a| razdalja med lečo in objektom
+|b| razdalja med lečo in sliko
+/p/Preslikave objektov (velikost)
+/v/Leče so optične naprave, ki izkoriščajo lom svetlobe. Za preslikavanje uporabljamo konveksne ali zbiralne leče in konkavne ali razpršilne leče. Velikost slike objekta lahko izračunamo preko naslednje enačbe.
+/s/
+/e/ PreslikaveObjektovVelikost.JPG
+|Pr|/|a|=|Sl|/|b|
+|Pr| Velikost Predmeta
+|Sl| Velikost Slike
+/p/Interferenca
+/v/Interferenca je pojav, ko se dve valovanji srečata na istem mestu in nastane nov valovni vzorec. Skupni odmik nihajoče količine je enak vsoti odmikov te količine posameznih valovanj. Kjer se valovni hrbti prvega valovanja ujemajo z valovnimi hrbti drugega valovanja, se skupna amplituda poveča (konstruktivna interferenca). Na mestu, kjer sta valovanji v protifazi, pride valovni hrbet prvega valovanja na valovno dolino drugega valovanja in na tem mestu se valovanji vzajemno oslabita (destruktivna interferenca). Interferenco lahko izračunamo preko naslednje enačbe.
+/s/
+/e/Interferenca.JPG
+|d|*sin|Fi|=|N|*|La|
+|d| razdalja med viroma valovanja
+|N| zaporedno število ojačitve
+|La| valovna dolžina valovanja
+/p/Gostota energijskega toka
+/v/Gostota energíjskega toka je fizikalna količina, ki pove, koliko energije preteče v časovni enoti skozi dano ploskev. Gostoto energíjskega toka na določeni razdalji izračunamo z enačbo.
+/s/
+/e/GostotaEnergijskegaToka.JPG
+|j|=|P|/(4*|Pi|*|r|*|r|)
+|j| Gostota energíjskega toka
+|P| energijski tok

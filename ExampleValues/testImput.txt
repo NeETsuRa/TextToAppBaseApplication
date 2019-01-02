@@ -1,0 +1,29 @@
+/g/1 Naslov
+dodatno besedilo
+/p/1.1 Podnaslov
+dodatno besedilo
+/v/1 Vsebina
+/s/1 Slika
+/e/1 Enacba
+|E|=|a|
+|E| clen 1
+|a| clen 2
+/p/1.2 Podnaslov
+/v/2 Vsebina
+/s/
+/e/2 Enacba
+|E|=|b|+|c|
+|b| clen 3
+|c| clen 4
+/p/1.3 Podnaslov
+dodatno besedilo
+/v/3 Vsebina
+/s/3 Slika
+/e/
+/g/2 Naslov
+/p/2.1 Podnaslov
+/v/4 Vsebina
+/s/4 Slika
+/e/4 Enacba
+|D|=|b|+|c|+|a|
+|D| clen 5

@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Aplikacija">
+    <item
+        android:id="@+id/action_ListaEnacb"
+        android:orderInCategory="100"
+        android:title="Lista Enačb"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ListaKonstant"
+        android:orderInCategory="100"
+        android:title="Lista Konstant"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_VnosReklam"
+        android:orderInCategory="100"
+        android:title="Vnos Reklame"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Nastavitve"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_Osvezi"
+        android:orderInCategory="100"
+        android:title="Osveži"
+        app:showAsAction="never" />
+</menu>

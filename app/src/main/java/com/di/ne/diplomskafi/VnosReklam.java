@@ -39,18 +39,6 @@ public class VnosReklam extends AppCompatActivity {
         }
 
     }
-    //TODO: filepicker
-    public void SlikaSelect (View e){
-        new FileChooser(this).setFileListener(new FileChooser.FileSelectedListener() {
-                                                  @Override
-                                                  public void fileSelected(final File file) {
-          Log.d("Dat", file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-          TextView slika = (TextView)findViewById(R.id.slika);
-          slika.setText(file.toString());
-                                                  }
-                                              }
-        ).showDialog();
-    }
     public void PrevzamiReklamo (View e){
         db.clearReklame();
 

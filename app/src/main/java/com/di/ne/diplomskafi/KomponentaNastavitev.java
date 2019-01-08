@@ -3,14 +3,18 @@ package com.di.ne.diplomskafi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.di.ne.diplomska.SQLite.DatabaseHelper;
 import com.di.ne.diplomska.SQLite.Nastavitve;
@@ -18,6 +22,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
 import java.io.File;
+import java.net.URISyntaxException;
 import java.util.List;
 
 /**
@@ -85,8 +90,7 @@ public class KomponentaNastavitev extends AppCompatActivity {
 
     private void openDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Choose how to find the File?").setPositiveButton("File Picker", dialogClickListener)
-                .setNegativeButton("Google Drive Download", dialogClickListener).show();
+        builder.setMessage("Choose how to find the File?").setPositiveButton("File Picker", dialogClickListener).show();
     }
 
     public void LoDatoteke(View view)  {
@@ -133,6 +137,59 @@ public class KomponentaNastavitev extends AppCompatActivity {
         super.onPause();
     }
 
+    private void showFileChooser(int FILE_SELECT_CODE) {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.setType("*/*");
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+
+        try {
+            startActivityForResult(
+                    Intent.createChooser(intent, "Select a File to Upload"),
+                    FILE_SELECT_CODE);
+        } catch (android.content.ActivityNotFoundException ex) {
+            // Potentially direct the user to the Market with a Dialog
+            Toast.makeText(this, "Please install a File Manager.",
+                    Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK){
+            Uri uri = data.getData();
+            String path = FileChooser.getPath(this, uri);
+            TextView filePath;
+            switch (requestCode) {
+                case Constants.BUTTON_LO_DAT:
+
+                    filePath = (TextView)findViewById(R.id.locDatoteke);
+                    if (path!=null){
+                        filePath.setText(path.toString());
+                    }else{
+                        filePath.setText("Please use an local file");
+                    }
+                    break;
+                case Constants.BUTTON_LO_ENA:
+                    filePath = (TextView)findViewById(R.id.locEnacbe);
+                    if (path!=null){
+                        filePath.setText(path.toString().substring(0,path.toString().lastIndexOf("/")+1));
+                    }else{
+                        filePath.setText("Please use an local file");
+                    }
+                    break;
+                case Constants.BUTTON_LO_SLI:
+                    filePath = (TextView)findViewById(R.id.locSlik);
+                    if (path!=null){
+                        filePath.setText(path.toString().substring(0,path.toString().lastIndexOf("/")+1));
+                    }else{
+                        filePath.setText("Please use an local file");
+                    }
+                    break;
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
     DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
         @Override
         public void onClick(DialogInterface dialog, int which) {
@@ -140,72 +197,16 @@ public class KomponentaNastavitev extends AppCompatActivity {
                 case DialogInterface.BUTTON_POSITIVE:
                     switch (button){
                         case Constants.BUTTON_LO_DAT:
-                            new FileChooser(activity).setFileListener(new FileChooser.FileSelectedListener() {
-                                  @Override
-                                  public void fileSelected(final File file) {
-                                      Log.d("Dat", file.toString());
-                                      TextView filePath = (TextView)findViewById(R.id.locDatoteke);
-                                      filePath.setText(file.toString());
-                                  }
-                              }
-                            ).showDialog();
+                            showFileChooser(Constants.BUTTON_LO_DAT);
                             break;
                         case Constants.BUTTON_LO_ENA:
-                            new FileChooser(activity).setFileListener(new FileChooser.FileSelectedListener() {
-                                  @Override
-                                  public void fileSelected(final File file) {
-                                      Log.d("Dat", file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                                      TextView imagePath = (TextView)findViewById(R.id.locSlik);
-                                      imagePath.setText(file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                                  }
-                              }
-                            ).showDialog();
+                            showFileChooser(Constants.BUTTON_LO_ENA);
                             break;
                         case Constants.BUTTON_LO_SLI:
-                            new FileChooser(activity).setFileListener(new FileChooser.FileSelectedListener() {
-                                  @Override
-                                  public void fileSelected(final File file) {
-                                      Log.d("Dat", file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                                      TextView enacbaPath = (TextView)findViewById(R.id.locEnacbe);
-                                      enacbaPath.setText(file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                                  }
-                                }
-                            ).showDialog();
+                            showFileChooser(Constants.BUTTON_LO_SLI);
                             break;
                     }
 
-                    break;
-
-                case DialogInterface.BUTTON_NEGATIVE:
-                    if (checkPlayServices()) {
-                        //TODO Download Google drive File
-
-                    }else{
-                        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-                        builder.setMessage("Phone not suports Play Services").setPositiveButton("File Picker", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                finish();
-                            }
-                        }).show();
-                    }
-                    switch (button){
-                        case Constants.BUTTON_LO_DAT:
-                            //Log.d("Dat", file.toString());
-                            //TextView filePath = (TextView)findViewById(R.id.locDatoteke);
-                            //filePath.setText(file.toString());
-                            break;
-                        case Constants.BUTTON_LO_ENA:
-                            //Log.d("Dat", file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                            //TextView imagePath = (TextView)findViewById(R.id.locSlik);
-                            //imagePath.setText(file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                            break;
-                        case Constants.BUTTON_LO_SLI:
-                            //Log.d("Dat", file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                            //TextView enacbaPath = (TextView)findViewById(R.id.locEnacbe);
-                            //enacbaPath.setText(file.toString().substring(0,file.toString().lastIndexOf("/")+1));
-                            break;
-                    }
                     break;
             }
         }

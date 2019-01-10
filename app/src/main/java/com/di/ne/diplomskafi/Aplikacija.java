@@ -62,7 +62,6 @@ public class Aplikacija extends AppCompatActivity {
                         new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
         }
 
-
         if(nast.size()!=0){
             File = nast.get(0).getFilePath();
         }else {
@@ -98,7 +97,7 @@ public class Aplikacija extends AppCompatActivity {
                     if(aplikacije.size()!=0){
                         fullTXT = fullTXT + "Verzija Datoteke : " + line + " Verzija baze: " + aplikacije.get(0).getVerzija() + "\n";
                         parent = "Ver";
-                        if (Long.parseLong(line) != aplikacije.get(0).getVerzija()) {
+                        if (Long.getLong(line,1L) != aplikacije.get(0).getVerzija()) {
                             Log.d("Verzija", "Nova verzija");
                             update = true;
                         } else {
@@ -114,7 +113,7 @@ public class Aplikacija extends AppCompatActivity {
                         update = true;
                     }
                     if(update){
-                        appl.setVerzija(Long.parseLong(line));
+                        appl.setVerzija(Long.getLong(line,1L));
                         db.clearOpisClenov();
                         db.clearEnacba();
                         db.clearGPoglavja();

@@ -97,7 +97,7 @@ public class Aplikacija extends AppCompatActivity {
                     if(aplikacije.size()!=0){
                         fullTXT = fullTXT + "Verzija Datoteke : " + line + " Verzija baze: " + aplikacije.get(0).getVerzija() + "\n";
                         parent = "Ver";
-                        if (Long.getLong(line,1L) != aplikacije.get(0).getVerzija()) {
+                        if (Long.getLong(line,0L) != aplikacije.get(0).getVerzija()) {
                             Log.d("Verzija", "Nova verzija");
                             update = true;
                         } else {
@@ -113,7 +113,7 @@ public class Aplikacija extends AppCompatActivity {
                         update = true;
                     }
                     if(update){
-                        appl.setVerzija(Long.getLong(line,1L));
+                        appl.setVerzija(Long.getLong(line,0L));
                         db.clearOpisClenov();
                         db.clearEnacba();
                         db.clearGPoglavja();

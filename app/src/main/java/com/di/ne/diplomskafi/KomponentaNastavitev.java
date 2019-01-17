@@ -77,6 +77,7 @@ public class KomponentaNastavitev extends AppCompatActivity {
         nast.setFilePath(filePath.getText().toString());
         db.clearNastavitve();
         db.writeNastavitve(nast);
+        List<Nastavitve> n = db.readNastavitve();
         Log.d("Nastavitve", "set");
     }
 

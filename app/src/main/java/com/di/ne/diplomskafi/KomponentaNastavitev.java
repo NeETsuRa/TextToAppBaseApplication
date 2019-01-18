@@ -56,9 +56,9 @@ public class KomponentaNastavitev extends AppCompatActivity {
         }else{
             velikostCrk.setText("20");
             barva.setText("Blue");
-            filePath.setText("/DIPL/InputFile.txt");
-            imagePath.setText("/DIPL/Slike/");
-            enacbaPath.setText("/DIPL/SlikeEnacbe/");
+            filePath.setText("/storage/emulated/0/dev/ExampleValues/Text/InputFile.txt");
+            imagePath.setText("/storage/emulated/0/dev/ExampleValues/Slike/");
+            enacbaPath.setText("/storage/emulated/0/dev/ExampleValues/Enacbe/");
         }
     }
 

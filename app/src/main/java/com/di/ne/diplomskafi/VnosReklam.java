@@ -2,15 +2,13 @@ package com.di.ne.diplomskafi;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.di.ne.diplomska.SQLite.*;
+import com.di.ne.diplomska.SQLite.DatabaseHelper;
 import com.di.ne.diplomska.SQLite.Reklame;
 
-import java.io.File;
 import java.util.List;
 
 /**

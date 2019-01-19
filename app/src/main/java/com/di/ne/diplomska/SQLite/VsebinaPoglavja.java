@@ -1,7 +1,5 @@
 package com.di.ne.diplomska.SQLite;
 
-import java.util.List;
-
 /**
  * Created by Nejc on 01.06.2016.
  */

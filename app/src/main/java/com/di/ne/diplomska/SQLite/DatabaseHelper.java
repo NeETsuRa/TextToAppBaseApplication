@@ -7,8 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.di.ne.diplomskafi.Aplikacija;
-
 import java.util.LinkedList;
 import java.util.List;
 
